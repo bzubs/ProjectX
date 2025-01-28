@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #F4F4F4;
+  color: #333333; 
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #4A90E2; /* Soft Blue */
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #D1E9FF; /* Light Blue */
+  text-decoration: underline;
+}
+
+/* Main Section */
+.main {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #FFFFFF; /* White Background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.main-title {
+  font-size: 48px;
+  color: #333333;
+}
+
+.main-subtitle {
+  font-size: 18px;
+  color: #666666;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.main-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #4A90E2; /* Soft Blue */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-button:hover {
+  background-color: #357ABD; /* Darker Blue */
+}
+
+/* Categories Section */
+.categories {
+  padding: 50px 20px;
+  background-color: #D1E9FF; /* Light Blue */
+  text-align: center;
+}
+
+.categories-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #FFFFFF; /* White Background */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+}
+
+.category-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #4A90E2; /* Soft Blue */
+}
+
+.category-name {
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #FFFFFF; /* White Background */
+}
+
+.testimonials-title {
+  font-size: 32px;
+  text-align: center;
+  color: #333333;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #F9F9F9; /* Light Gray */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  color: #333333;
+  font-style: italic;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 50px 20px;
+  background-color: #FF6F61; /* Coral */
+  color: white;
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 32px;
+}
+
+.newsletter-input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  margin: 10px;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4A90E2; /* Soft Blue */
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #357ABD; /* Darker Blue */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #FFFFFF; /* White Background */
+  color: #666666;
+  border-top: 1px solid #ddd;
+}
