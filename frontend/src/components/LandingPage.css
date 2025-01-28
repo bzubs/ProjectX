@@ -1,11 +1,11 @@
-/* General Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #F4F4F4;
-  color: #333333; 
+  background-color: #F8F3E4; /* Off-white background */
+  color: #4B3F3A; /* Dark Brown text */
+  box-sizing: border-box;
 }
 
 /* Header */
@@ -14,34 +14,78 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #4A90E2; /* Soft Blue */
+  background-color: #4B3F3A; /* Dark Brown */
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 30px; /* Adds space between the logo and nav links */
 }
 
 .logo {
-  font-size: 24px;
+  font-family: 'Lora', serif;
+  font-size: 28px;
   font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #D1E9FF; /* Light Blue */
+  color: #A78F6B; /* Light Brown hover effect */
   text-decoration: underline;
+}
+
+/* Remove trending-btn and make it a link */
+.trending-btn {
+  display: none; /* Remove button */
+}
+
+/* Login and Register Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #A78F6B; /* Light Brown hover */
+  border-color: #A78F6B;
 }
 
 /* Main Section */
 .main {
   text-align: center;
   padding: 100px 20px;
-  background-color: #FFFFFF; /* White Background */
+  background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   margin: 20px auto;
@@ -49,13 +93,15 @@ body {
 }
 
 .main-title {
+  font-family: 'Lora', serif;
   font-size: 48px;
-  color: #333333;
+  color: #4B3F3A; /* Dark Brown */
 }
 
 .main-subtitle {
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  color: #666666;
+  color: #A78F6B; /* Light Brown */
   max-width: 600px;
   margin: 10px auto;
 }
@@ -63,7 +109,7 @@ body {
 .main-button {
   padding: 15px 30px;
   font-size: 16px;
-  background-color: #4A90E2; /* Soft Blue */
+  background-color: #A78F6B; /* Light Brown */
   color: white;
   border: none;
   border-radius: 30px;
@@ -72,30 +118,31 @@ body {
 }
 
 .main-button:hover {
-  background-color: #357ABD; /* Darker Blue */
+  background-color: #4B3F3A; /* Dark Brown on hover */
 }
 
 /* Categories Section */
 .categories {
   padding: 50px 20px;
-  background-color: #D1E9FF; /* Light Blue */
+  background-color: #D8C7B9; /* Beige */
   text-align: center;
 }
 
 .categories-title {
+  font-family: 'Lora', serif;
   font-size: 32px;
   margin-bottom: 20px;
-  color: #333333;
+  color: #4B3F3A; /* Dark Brown */
 }
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .category-card {
-  background-color: #FFFFFF; /* White Background */
+  background-color: #FFFFFF;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -110,24 +157,25 @@ body {
 .category-icon {
   font-size: 40px;
   margin-bottom: 10px;
-  color: #4A90E2; /* Soft Blue */
+  color: #4B3F3A;
 }
 
 .category-name {
   font-size: 18px;
-  color: #333333;
+  color: #4B3F3A;
 }
 
 /* Testimonials Section */
 .testimonials {
   padding: 50px 20px;
-  background-color: #FFFFFF; /* White Background */
+  background-color: #FFFFFF;
 }
 
 .testimonials-title {
+  font-family: 'Lora', serif;
   font-size: 32px;
   text-align: center;
-  color: #333333;
+  color: #4B3F3A;
 }
 
 .testimonial-cards {
@@ -137,7 +185,7 @@ body {
 }
 
 .testimonial-card {
-  background-color: #F9F9F9; /* Light Gray */
+  background-color: #F9F9F9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -146,6 +194,7 @@ body {
 }
 
 .testimonial-text {
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: #555555;
   margin-bottom: 10px;
@@ -153,7 +202,7 @@ body {
 
 .testimonial-author {
   font-size: 16px;
-  color: #333333;
+  color: #4B3F3A;
   font-style: italic;
 }
 
@@ -166,6 +215,7 @@ body {
 }
 
 .newsletter-title {
+  font-family: 'Lora', serif;
   font-size: 32px;
 }
 
@@ -182,7 +232,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  background-color: #4A90E2; /* Soft Blue */
+  background-color: #A78F6B; /* Light Brown */
   border-radius: 30px;
   color: white;
   cursor: pointer;
@@ -190,14 +240,33 @@ body {
 }
 
 .newsletter-button:hover {
-  background-color: #357ABD; /* Darker Blue */
+  background-color: #4B3F3A;
 }
 
 /* Footer */
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #FFFFFF; /* White Background */
-  color: #666666;
+  background-color: #FFFFFF;
+  color: #4B3F3A;
   border-top: 1px solid #ddd;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./LandingPage.css"; // Import the CSS file
 
 const LandingPage = () => {
@@ -8,20 +9,40 @@ const LandingPage = () => {
       <header className="header">
         <h1 className="logo fade-in">ProjectX</h1>
         <nav className="nav">
-          <a href="#about" className="nav-link slide-in">About</a>
-          <a href="#categories" className="nav-link slide-in">Categories</a>
-          <a href="#testimonials" className="nav-link slide-in">Testimonials</a>
+          {/* Navbar links */}
+          <div className="nav-links">
+            <Link to="#about" className="nav-link slide-in">About</Link>
+            <Link to="#categories" className="nav-link slide-in">Categories</Link>
+            <Link to="#testimonials" className="nav-link slide-in">Testimonials</Link>
+          </div>
+
+          {/* Navbar buttons (Trending, Login, and Register) */}
+          <div className="nav-buttons">
+            <Link to="/trending">
+              <button className="trending-btn">Trending</button>
+            </Link>
+            <Link to="/login">
+              <button className="nav-btn">Login</button>
+            </Link>
+            <Link to="/register">
+              <button className="nav-btn">Register</button>
+            </Link>
+          </div>
         </nav>
       </header>
 
       {/* Main Section */}
       <main className="main">
-        <h2 className="main-title bounce">Explore Your Passions</h2>
+        <h2 className="main-title bounce">Write stories that matter.</h2>
         <p className="main-subtitle color-change">
           Whether it's education, sports, movies, or music, we bring together
           the best stories for you. Start your journey with ProjectX today!
         </p>
-        <button className="main-button fade-in">Get Started</button>
+
+        {/* Get Started Button linking to Login */}
+        <Link to="/login">
+          <button className="main-button fade-in">Get Started</button>
+        </Link>
       </main>
 
       {/* Categories Section */}
